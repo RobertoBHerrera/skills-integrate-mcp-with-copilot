@@ -57,6 +57,24 @@ section h3 {
   color: #1a237e;
 }
 
+.search-container {
+  margin-bottom: 20px;
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: #1a237e;
+  box-shadow: 0 0 3px rgba(26, 35, 126, 0.3);
+}
+
 .activity-card {
   margin-bottom: 15px;
   padding: 15px;

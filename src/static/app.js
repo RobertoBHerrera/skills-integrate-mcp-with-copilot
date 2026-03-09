@@ -155,6 +155,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // Search/filter functionality
+  const searchInput = document.getElementById("search-input");
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase();
+    document.querySelectorAll(".activity-card").forEach((card) => {
+      const text = card.textContent.toLowerCase();
+      card.style.display = text.includes(query) ? "" : "none";
+    });
+  });
+
   // Initialize app
   fetchActivities();
 });
